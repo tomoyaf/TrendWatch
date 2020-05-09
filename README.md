@@ -1,6 +1,7 @@
 # TrendWatch
-![deploy to netlify](https://github.com/tomoyaf/TrendWatch/workflows/deploy%20to%20netlify/badge.svg?event=deployment_status)
 
-TrendWatchはキュレーションサービスです.  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22a7a4d3-0c86-46b7-84de-15ef781c76a3/deploy-status)](https://app.netlify.com/sites/trendwatch/deploys)
 
-Google NewsとGoogle Trendsから最新の情報を取得して表示します。
+TrendWatch はキュレーションサービスです.
+
+Google News と Google Trends から最新の情報を取得して表示します。
