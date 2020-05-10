@@ -32,7 +32,10 @@ jobs:
       - name: yarn test
         run: yarn run test
 
-      - name: yarn build and deploy
-        run: |
+      - name: yarn build
+        run:
         yarn run build
-        curl -X POST -d {} https://api.netlify.com/build_hooks/5eb75aa555780e9a1101a58b
+
+      - name: deploy
+        uses: wei/curl@v1
+        run: -X POST -d {} https://api.netlify.com/build_hooks/5eb75aa555780e9a1101a58b
