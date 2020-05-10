@@ -37,4 +37,5 @@ jobs:
 
       - name: deploy
         uses: wei/curl@v1
-        run: -X POST -d {} https://api.netlify.com/build_hooks/5eb75aa555780e9a1101a58b
+        with:
+          args: -X POST -d {} https://api.netlify.com/build_hooks/5eb75aa555780e9a1101a58b
