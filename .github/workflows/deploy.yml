@@ -32,14 +32,7 @@ jobs:
       - name: yarn test
         run: yarn run test
 
-      - name: yarn build
-        run: yarn run build
-
-      - name: Deploy to netlify
-        uses: netlify/actions/cli@master
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        with:
-          args: deploy --dir=./build --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+      - name: yarn build and deploy
+        run: |
+        yarn run build
+        curl -X POST -d {} https://api.netlify.com/build_hooks/5eb75aa555780e9a1101a58b
