@@ -6,6 +6,5 @@ import App from './App';
 
 test("render App", () => {
   const { container } = render(<App />);
-  // expect(container).toBeTruthy();
-  expect(container).toBeFalsy();
+  expect(container).toBeTruthy();
 });
